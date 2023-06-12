@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!------------- jquery cdn ------------>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $(".div1").slideUp(2000);
+            })
+            $("#btn2").click(function(){
+                $(".div1").slideDown(2000);
+            })
+            $("#btn3").click(function(){
+                $(".div1").slideToggle(2000);
+            })
+        })
+
+        $(document).ready(function(){
+            $("#btn4").click (function(){
+                $(".img").slideUp(2000);
+            })
+            $("#btn5").click(function(){
+                $(".img").slideDown(2000);
+            })
+            $("#btn6").click(function(){
+                $(".img").slideToggle(2000);
+            })
+        })        
+    </script>
+
+    <style>
+        .div1{
+            height: 200px;
+            width: 200px;
+            background-color:rgb(8, 51, 88)
+        }
+        img{
+            height: 200px;
+            width: 200px;
+        }
+        .flex{
+            display: flex;
+        }
+        .flex2{
+            margin-left: 50px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="flex">
+        <div class="flex1">
+            <button id="btn1">Slide Up</button>
+            <button id="btn2">Slide Down</button>
+            <button id="btn3">Slide Toggle</button>
+            <hr>
+            <br>
+
+            <div class="div1"></div>
+        </div>
+        
+        <div class="flex2">
+            <button id="btn4">Slide Up</button>
+            <button id="btn5">Slide Down</button>
+            <button id="btn6">Slide Toggle</button>
+            <hr>
+            <br>
+
+            <div class="img">
+                <img src="fadeimg.avif" id="img1" alt="">
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
