@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!---------- jquery cdn ----------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!---------- bxslider js cdn ----------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <!---------- bxslider css cdn ----------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css">
+    
+    <style>
+        .text{
+            color: rgb(245, 239, 239);
+            font-size: 70px;
+            margin-left: 70px;
+            margin-top: 200px;
+            
+        }
+        .image1{
+            background-image: url(../6-bxslider/images/f-1.jpg);
+            height: 600px;
+            max-width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            z-index: 1;
+
+        }
+        .image1::after{
+            content:"";
+            position:absolute;
+            z-index: -1;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 6, 12, 0.7);
+        }
+
+
+        .image2{
+            background-image: url(../6-bxslider/images/f-2.jpg);
+            height: 600px;
+            max-width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            z-index: 1;
+        }
+        .image2::after{
+            content:"";
+            position:absolute;
+            z-index: -1;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 6, 12, 0.7);
+        }
+
+
+        .image3{
+            background-image: url(../6-bxslider/images/f-5.webp);
+            height: 600px;
+            max-width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            z-index: 1;
+        }
+
+        .image3::after{
+            content:"";
+            position:absolute;
+            z-index: -1;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 6, 12, 0.7);
+        }
+
+
+        .image4{
+            background-image: url(../6-bxslider/images/f-4.webp);
+            height: 600px;
+            max-width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            z-index: 1;
+        }
+
+
+        .image4::after{
+            content:"";
+            position:absolute;
+            z-index: -1;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 6, 12, 0.7);
+        }
+
+
+    </style>
+
+<script>
+    $(function(){
+          $('.main').bxSlider({
+              mode: 'fade',
+              captions: true,
+              pager:true,   
+              controls:true,
+              auto:true,
+              autoHover:false,
+              speed:50,
+          });
+    });
+</script>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="image1">
+                <h1 class="text" >image1</h1 >
+            </div>
+            <div class="image2">
+                <h1 class="text">image2</h1 >
+            </div>
+            <div class="image3">
+                <h1 class="text">image3</h1 >
+            </div>
+            <div class="image4">
+                <h1 class="text">image4</h1 >
+            </div>
+        </div>
+    </div>
+</body>
+</html>
