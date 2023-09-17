@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!------------------- jquery cdn ----------------------->    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+
+        // callback means call function in juquery functions.
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $("h1").hide(2000,function(){
+                    alert("content is hide.")
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+    <button id="btn">Click Here</button>
+    <h1>hello world</h1>
+</body>
+</html>
